@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio y Proyectos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="data:,"> <!-- Agregado favicon vacío -->
+</head>
+<body>
+    <!-- Contenedor de carga -->
+    <div id="loading-screen" style="display: none;">
+        <img src="gif/Carga_pagina.gif" alt="Cargando...">
+    </div>
+    <a href="lp.html" id="proyectos-link" style="text-decoration: none; color: inherit;">Proyectos</a>
+
+    <!-- Barra de navegación -->
+    <nav class="barra">
+        <div class="menu-hamburguesa" id="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="menu" class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="lp.html" id="proyectos-link">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li class="home-icon">
+                <a href="index.html">
+                    <img src="https://via.placeholder.com/40" alt="Home Icon" class="home-button">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Inicio -->
+    <section id="inicio">
+        <header class="hero-section">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>Portafolio de: [Tu Nombre]</h1>
+                    <p>Texto descriptivo sobre tu misión y experiencia.</p>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Sobre Mí</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://via.placeholder.com/150" alt="Foto de perfil">
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos">
+        <h2><a href="lp.html" class="proyectos-link">Proyectos</a></h2>
+        <div class="proyecto-item proyecto-izquierda">
+            <div class="proyecto-content">
+                <div class="proyecto-image">
+                    <img src="https://via.placeholder.com/300" alt="Proyecto 1">
+                </div>
+                <div class="proyecto-text">
+                    <h3>Proyecto 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="proyecto-item proyecto-derecha">
+            <div class="proyecto-content">
+                <div class="proyecto-text">
+                    <h3>Proyecto 2</h3>
+                    <p>Sed viverra nunc et ipsum suscipit.</p>
+                </div>
+                <div class="proyecto-image">
+                    <img src="https://via.placeholder.com/300" alt="Proyecto 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <footer class="footer">
+        <section id="contacto">
+            <p>Información de Contacto: ejemplo@mail.com | Tel: 123-456-7890</p>
+            <button id="contact-form-button" class="contact-button">Formulario de Contacto</button>
+            <div class="social-icons">
+                <a href="#"><img src="https://via.placeholder.com/20" alt="Icono 1"></a>
+                <a href="#"><img src="https://via.placeholder.com/20" alt="Icono 2"></a>
+                <a href="#"><img src="https://via.placeholder.com/20" alt="Icono 3"></a>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Modal -->
+    <div id="contact-form-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <button id="close-form" class="close-btn" aria-label="Cerrar">✖</button>
+            <h2 id="modal-title">Formulario de Contacto</h2>
+            <div class="form-container">
+                <form id="contact-form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    <p id="name-error" class="error-message"></p>
+    
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <p id="email-error" class="error-message"></p>
+    
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <p id="message-error" class="error-message"></p>
+    
+                    <div class="form-buttons">
+                        <button type="submit" class="submit-btn">Enviar</button>
+                        <button type="button" class="cancel-btn" id="cancel-form">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="validation-box" id="validationBox"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
